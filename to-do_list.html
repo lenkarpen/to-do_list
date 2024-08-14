@@ -4,19 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-Do List Application</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <header>
-        <img src="images/logo.png" alt="logo" width="358">
-        <img src="images/try_btn_secondary.svg" alt="button" visability="hidden">            
+        <logo><a href="index.html"><img src="images/logo.png" alt="logo" width="358"></a></logo>
+        <button><a href="to-do_list.html"><img src="images/try_btn_secondary.svg" alt="button" width="430"></a></button>         
     </header>
     <main>
-        <section>
-            <h2>To-Do List</h2>
-            <img src="images/add_btn.svg" alt="button" width="140">
-        </section>
+        <h2>To-Do List</h2>
+        <todolist>
+        <div id="newtask">
+            <input type="text" id="taskInput" placeholder="Add a task...">
+            <button id="push">Add</button>
+        </div>
+        <div id="tasks"></div>
+        </todolist>
     </main>
     <footer>
         <p>&copy; 2024 Olena Karpenko. All rights reserved.</p>
